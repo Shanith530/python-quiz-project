@@ -36,11 +36,20 @@ while True:
         break
     print("Please enter only yes or no.")
 
+while True:
+    answer = input("A variable in Python can store data values.? (yes/no): ").lower()
+    if answer == "yes" or answer == "no":
+        if answer == "yes":
+            score += 1
+        break
+    print("Please enter only yes or no.")
 
-print("Your final score is", score, "/3")
+print("Your final score is", score, "/4")
 
-if score == 3:
+if score == 4:
     print("Outstanding! You got everything correct! ")
+elif score == 3:
+    print("Outstanding! You got almost everything correct! ")
 elif score == 2:
     print("Great job! You did very well. ")
 elif score == 1:
